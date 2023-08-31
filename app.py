@@ -9,11 +9,13 @@ from resources.tag import blp as tag_blueprint
 from resources.user import blp as user_blueprint
 from db import db
 from blocklist import BLOCKLIST
+from dotenv import load_dotenv
 import models
 
 
 def create_app(db_url=None):
     app = Flask(__name__)
+    load_dotenv()
 
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "Stores REST API"

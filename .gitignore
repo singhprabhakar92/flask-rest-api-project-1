@@ -1,5 +1,6 @@
 .idea
-__pycache__
-instance/data.db
 *.pyc
-.DS_Store
+__pycache__
+.venv
+*.db
+.env
